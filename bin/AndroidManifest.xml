@@ -3,10 +3,8 @@
     package="com.example.hometownportal"
     android:versionCode="1"
     android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+    
+    <uses-sdk android:minSdkVersion="4" />
 
     <application
         android:allowBackup="true"
@@ -23,6 +21,15 @@
             </intent-filter>
         </activity>
         <activity android:name="ShoppingActivity"></activity>
+        <activity android:name="ShoppingAll"></activity>
+        <activity android:name="ShoppingMalls"></activity>
+        <activity android:name="ShoppingSpecialty"></activity>
+        <activity android:name="ShopDetails"></activity>
+        <activity android:name="EntertainmentActivity"></activity>
+        <activity android:name="Parks"></activity>
+        <activity android:name="Nightlife"></activity>
+        <activity android:name="Arts"></activity>
+        <activity android:name="EntertainmentDetails"></activity>
     </application>
 
 </manifest>

@@ -7,12 +7,23 @@
     <string name="entertainment">Entertainment</string>
     <string name="dining">Dining</string>
     <string name="shopping">Shopping</string>
-    <string name="employment">Shopping</string>
+    <string name="employment">Employment</string>
     <string name="schools">Schools</string>
     <string name="news">News</string>
     <string name="history">History</string>
-    <color name="teal">#008080</color>
-    <color name="aqua">#00FFFF</color>
-    <color name="blue">#0000FF</color>
+    <string name="submit">Submit</string>
+    <string name="shopping_prompt">Narrow your search</string>
+    <string-array name="shop_options">
+        <item>See All</item>
+        <item>Malls</item>
+        <item>Specialty Shops</item>
+    </string-array>
+    <string-array name="entertainment_options">
+        <item>Parks</item>
+        <item>Nightlife</item>
+        <item>Arts</item>
+    </string-array>
+    <color name="MistyRose">#FFE4E1</color>
+    <color name="Lavender">#E6E6FA</color>
 
 </resources>

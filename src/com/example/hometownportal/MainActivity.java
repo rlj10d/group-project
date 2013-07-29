@@ -23,6 +23,9 @@ public class MainActivity extends Activity {
 	
 	public void entertainmentActivity(View view) {
 		
+		Intent i = new Intent(this, EntertainmentActivity.class);
+		startActivity(i);
+		
 	}
 	
 	public void diningActivity(View view) {

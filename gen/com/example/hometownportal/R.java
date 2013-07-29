@@ -8,12 +8,15 @@
 package com.example.hometownportal;
 
 public final class R {
+    public static final class array {
+        public static final int entertainment_options=0x7f060001;
+        public static final int shop_options=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int aqua=0x7f060001;
-        public static final int blue=0x7f060002;
-        public static final int teal=0x7f060000;
+        public static final int Lavender=0x7f070001;
+        public static final int MistyRose=0x7f070000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -26,18 +29,92 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int pcb=0x7f020001;
+        public static final int aaronbessant=0x7f020000;
+        public static final int alvins=0x7f020001;
+        public static final int aquatic=0x7f020002;
+        public static final int backdoor=0x7f020003;
+        public static final int barkingdivas=0x7f020004;
+        public static final int beachhouse=0x7f020005;
+        public static final int bigwillys=0x7f020006;
+        public static final int blueheron=0x7f020007;
+        public static final int bluewaters=0x7f020008;
+        public static final int buoy=0x7f020009;
+        public static final int camphelen=0x7f02000a;
+        public static final int cobra=0x7f02000b;
+        public static final int coconutcreek=0x7f02000c;
+        public static final int conservation=0x7f02000d;
+        public static final int coyoteugly=0x7f02000e;
+        public static final int cutesassy=0x7f02000f;
+        public static final int ebro=0x7f020010;
+        public static final int floridalinen=0x7f020011;
+        public static final int footprints=0x7f020012;
+        public static final int frankbrown=0x7f020013;
+        public static final int grandtheatre=0x7f020014;
+        public static final int gulfworld=0x7f020015;
+        public static final int hys=0x7f020016;
+        public static final int ic_launcher=0x7f020017;
+        public static final int indy=0x7f020018;
+        public static final int islanders=0x7f020019;
+        public static final int jakes=0x7f02001a;
+        public static final int lavela=0x7f02001b;
+        public static final int newbys=0x7f02001c;
+        public static final int newbystoo=0x7f02001d;
+        public static final int panamadunes=0x7f02001e;
+        public static final int parchment=0x7f02001f;
+        public static final int pawsitively=0x7f020020;
+        public static final int pcb=0x7f020021;
+        public static final int pcmall=0x7f020022;
+        public static final int pieces=0x7f020023;
+        public static final int pierpark=0x7f020024;
+        public static final int rickseltzer=0x7f020025;
+        public static final int ripleys=0x7f020026;
+        public static final int saltydog=0x7f020027;
+        public static final int saltygoat=0x7f020028;
+        public static final int seenontv=0x7f020029;
+        public static final int shimmeringseas=0x7f02002a;
+        public static final int shipwreck=0x7f02002b;
+        public static final int shipwreckisland=0x7f02002c;
+        public static final int shopping=0x7f02002d;
+        public static final int standrews=0x7f02002e;
+        public static final int sterlingsun=0x7f02002f;
+        public static final int stock=0x7f020030;
+        public static final int sunsations=0x7f020031;
+        public static final int tooties=0x7f020032;
+        public static final int willyslive=0x7f020033;
     }
     public static final class id {
-        public static final int action_settings=0x7f090000;
+        public static final int action_settings=0x7f0a0014;
+        public static final int eAddress=0x7f0a0006;
+        public static final int eName=0x7f0a0003;
+        public static final int ePhone=0x7f0a0005;
+        public static final int eSDescript=0x7f0a0004;
+        public static final int eWebsite=0x7f0a0007;
+        public static final int entertainmentSpinner=0x7f0a0001;
+        public static final int sdAddress=0x7f0a000b;
+        public static final int sdIcon=0x7f0a0008;
+        public static final int sdLDescript=0x7f0a000d;
+        public static final int sdName=0x7f0a0009;
+        public static final int sdPhone=0x7f0a000a;
+        public static final int sdWebsite=0x7f0a000c;
+        public static final int shopSpinner=0x7f0a0013;
+        public static final int shoppingSubmit=0x7f0a0002;
+        public static final int shops=0x7f0a0000;
+        public static final int tvAddress=0x7f0a0011;
+        public static final int tvName=0x7f0a000e;
+        public static final int tvPhone=0x7f0a0010;
+        public static final int tvSDescript=0x7f0a000f;
+        public static final int tvWebsite=0x7f0a0012;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int shopping=0x7f030001;
+        public static final int entertainment_activity=0x7f030001;
+        public static final int entertainment_entry=0x7f030002;
+        public static final int shop_details=0x7f030003;
+        public static final int shop_entry=0x7f030004;
+        public static final int shopping_activity=0x7f030005;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -50,6 +127,8 @@ public final class R {
         public static final int news=0x7f050008;
         public static final int schools=0x7f050007;
         public static final int shopping=0x7f050005;
+        public static final int shopping_prompt=0x7f05000b;
+        public static final int submit=0x7f05000a;
     }
     public static final class style {
         /** 
@@ -73,10 +152,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }
