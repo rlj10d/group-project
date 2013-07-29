@@ -23,7 +23,6 @@
         <item>Nightlife</item>
         <item>Arts</item>
     </string-array>
-    <color name="MistyRose">#FFE4E1</color>
-    <color name="Lavender">#E6E6FA</color>
+    <color name="AliceBlue">#F0F8FF</color>
 
 </resources>

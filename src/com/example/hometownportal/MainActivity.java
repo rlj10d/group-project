@@ -1,3 +1,14 @@
+/**
+ * 
+ * MainActivity.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This is the MainActivity class.
+ * It generates a new Activity based on the user's selection.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.os.Bundle;

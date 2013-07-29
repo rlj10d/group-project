@@ -1,19 +1,26 @@
+/**
+ * 
+ * ShopListAdapter.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the ShopListAdapter.
+ * This is a custom adapter for an ShopList object.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import java.util.ArrayList;
-//import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-//import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 public class ShopListAdapter extends ArrayAdapter<ShopList> {
-	
-	//private Context mContext;
+
 	private ArrayList<ShopList> mShopList;
 	
 	public ShopListAdapter(Context context, int textViewResourceId, ArrayList<ShopList> objects) {
@@ -66,6 +73,7 @@ public class ShopListAdapter extends ArrayAdapter<ShopList> {
         TextView tvAddress = (TextView)row.findViewById(R.id.tvAddress);
         tvAddress.setText(entry.getAddress());
         
+        // set website
         TextView tvWebsite = (TextView)row.findViewById(R.id.tvWebsite);
         tvWebsite.setText(entry.getWebsite());
  

@@ -1,3 +1,14 @@
+/**
+ * 
+ * EntertainmentListAdapter.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the EntertainmentListAdapter.
+ * This is a custom adapter for an EntertainmentList object.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import java.util.ArrayList;
@@ -62,6 +73,7 @@ public class EntertainmentListAdapter extends ArrayAdapter<EntertainmentList> {
         TextView eAddress = (TextView)row.findViewById(R.id.eAddress);
         eAddress.setText(entry.getAddress());
         
+        // set website
         TextView eWebsite = (TextView)row.findViewById(R.id.eWebsite);
         eWebsite.setText(entry.getWebsite());
  

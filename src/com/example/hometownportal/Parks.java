@@ -1,3 +1,14 @@
+/**
+ * 
+ * Parks.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the Parks ListActivity.
+ * It contains a ListView of parks in Panama City, FL.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.ListActivity;
@@ -14,6 +25,7 @@ EntertainmentListAdapter adapter;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		// set content of ListView via our custom adapter
 		adapter = new EntertainmentListAdapter(this, R.layout.entertainment_entry, EntertainmentActivity.getParks());
 		setListAdapter(adapter);
 		
@@ -26,7 +38,7 @@ EntertainmentListAdapter adapter;
 		return true;
 	}
 	
-	
+	// when user clicks item, start new activity to show item details
 	public void onListItemClick(ListView parent, View v, int position,
 			long id) {
 			Intent i = new Intent(this, EntertainmentDetails.class);

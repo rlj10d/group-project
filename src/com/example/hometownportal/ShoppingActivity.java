@@ -1,3 +1,14 @@
+/**
+ * 
+ * ShoppingActivity.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the Shopping Activity.
+ * Currently this includes Malls and Specialty Shops.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import java.util.ArrayList;
@@ -28,16 +39,20 @@ public class ShoppingActivity extends Activity {
 		text = (TextView)findViewById(R.id.shops);
 		spinner = (Spinner)findViewById(R.id.shopSpinner);
 		
+		// Intro text
 		text.setText("Panama City is home to great shopping! Make a selection below to narrow your search, or click submit to see all.");
 		
+		// set options for Bitmaps
 		o = new BitmapFactory.Options();
 		o.inPurgeable = true;
 		o.inInputShareable = true;
 		
+		// create ArrayLists
 		malls = new ArrayList<ShopList>();
 		specialty = new ArrayList<ShopList>();
 		allShops = new ArrayList<ShopList>();
 		
+		// populate the ArrayLists
 		populateMalls();
 		populateSpecialty();
 		populateAll();
@@ -77,7 +92,7 @@ public class ShoppingActivity extends Activity {
 									"Pet Apparel and Accessories",
 									"Dog Clothes can be found almost everywhere these days, however, Barking Divas offers " +
 									"something unique and different in pet apparel and accessories. Barking Divas also " +
-									"carries many items especialy for you. All Divas have Diva Moms who deserve to be spoiled too.",
+									"carries many items especially for you. All Divas have Diva Moms who deserve to be spoiled too.",
 									"http://www.barkingdivas.com"));
 
 		specialty.add(new ShopList(BitmapFactory.decodeResource(getResources(), R.drawable.bigwillys, o),
@@ -160,7 +175,7 @@ public class ShoppingActivity extends Activity {
 									"8721 Thomas Drive, Panama City Beach, FL 32408",
 									"Specialty",
 									"Beach Accessories, Groceries",
-									"Forget something for your perfect vaction?  We've got it!  Beach towels, beach toys, " +
+									"Forget something for your perfect vacation?  We've got it!  Beach towels, beach toys, " +
 									"swim trunks, flip flops, hats, coolers and much more! Plus a large selection of beer, " +
 									"wine, and wine coolers.  Fresh hot boiled peanuts, candy, and hand dipped Blue Bell " +
 									"Icecream are on hand too!"));
@@ -297,6 +312,8 @@ public class ShoppingActivity extends Activity {
 		return true;
 	}
 	
+	/* This method is called when the "Submit" button is clicked.
+	   It starts a new Activity based on the user's selection. */
 	public void filter(View view) 
 	{
 		
@@ -313,7 +330,7 @@ public class ShoppingActivity extends Activity {
 			startActivity(b);
 			break;
 		case 2:
-			// specialty districts
+			// specialty stores activity
 			Intent c = new Intent(this, ShoppingSpecialty.class);
 			startActivity(c);
 			break;
@@ -322,6 +339,8 @@ public class ShoppingActivity extends Activity {
 		}
 	}
 
+	// Getters
+	
 	protected static ArrayList<ShopList> getMalls() {
 		return malls;
 	}
@@ -329,7 +348,6 @@ public class ShoppingActivity extends Activity {
 	protected static ArrayList<ShopList> getSpecialty() {
 		return specialty;
 	}
-
 
 	protected static ArrayList<ShopList> getAllShops() {
 		return allShops;

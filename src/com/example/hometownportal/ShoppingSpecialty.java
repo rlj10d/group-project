@@ -1,3 +1,14 @@
+/**
+ * 
+ * ShoppingSpecialty.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the ShoppingSpecialty ListActivity.
+ * It displays a ListView of specialty shops in Panama City.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.ListActivity;
@@ -12,6 +23,7 @@ public class ShoppingSpecialty extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		// set content of ListView via custom adapter
 		ShopListAdapter adapter = new ShopListAdapter(this, R.layout.shop_entry, ShoppingActivity.getSpecialty());
 		setListAdapter(adapter);
 	}	

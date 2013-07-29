@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" 
+    android:background="@color/AliceBlue"
     >
 
     <TextView
@@ -10,6 +11,7 @@
         android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:typeface="serif"
+    	android:textSize="18sp"
     	android:scrollbars="vertical"
     />
     

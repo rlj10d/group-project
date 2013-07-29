@@ -1,3 +1,14 @@
+/**
+ * 
+ * Nightlife.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the Nightlife ListActivity.
+ * It contains a ListView of night life activities in Panama City, FL.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.ListActivity;
@@ -14,6 +25,7 @@ EntertainmentListAdapter adapter;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		// set content of the ListView via the custom adapter
 		adapter = new EntertainmentListAdapter(this, R.layout.entertainment_entry, EntertainmentActivity.getNightlife());
 		setListAdapter(adapter);
 		
@@ -26,7 +38,7 @@ EntertainmentListAdapter adapter;
 		return true;
 	}
 	
-	
+	// when user clicks on a row, a new activity is started to view the details.
 	public void onListItemClick(ListView parent, View v, int position,
 			long id) {
 			Intent i = new Intent(this, EntertainmentDetails.class);

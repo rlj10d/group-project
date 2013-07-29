@@ -1,3 +1,15 @@
+/**
+ * 
+ * ShopDetails.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the ShopDetails Activity.
+ * It displays the details of an Shop item, including
+ * name, phone number, address, website, and a description.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.Activity;
@@ -29,8 +41,10 @@ public class ShopDetails extends Activity {
 			description = (TextView)findViewById(R.id.sdLDescript);
 			icon = (ImageView)findViewById(R.id.sdIcon);
 			
+			// Get item type from intent
 			String whichArray = extras.getString("list");
 			
+			// Pull data from item in the appropriate array			
 			if (whichArray.equals("all")) {
 				icon.setImageBitmap(ShoppingActivity.getAllShops().get(extras.getInt("position")).getIcon());
 				name.setText(ShoppingActivity.getAllShops().get(extras.getInt("position")).getName());
@@ -58,6 +72,7 @@ public class ShopDetails extends Activity {
 				description.setText(ShoppingActivity.getSpecialty().get(extras.getInt("position")).getlDescript());
 			}
 			
+			// add links
 			Linkify.addLinks(phone, Linkify.PHONE_NUMBERS);
 			Linkify.addLinks(website, Linkify.WEB_URLS);
 

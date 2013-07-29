@@ -1,3 +1,14 @@
+/**
+ * 
+ * EntertainmentActivity.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the Entertainment Activity.
+ * Currently this includes Parks, Nightlife, and Arts.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import java.util.ArrayList;
@@ -38,6 +49,7 @@ public class EntertainmentActivity extends Activity {
 		nightlife = new ArrayList<EntertainmentList>();
 		arts = new ArrayList<EntertainmentList>();
 		
+		// populate the lists with data
 		populateParks();
 		populateNightlife();
 		populateArts();
@@ -379,6 +391,8 @@ public class EntertainmentActivity extends Activity {
 		return true;
 	}
 	
+	/* This method is called when the "Submit" button is clicked.
+	   It starts a new Activity based on the user's selection. */
 	public void filter(View view) 
 	{
 		
@@ -404,6 +418,7 @@ public class EntertainmentActivity extends Activity {
 		}
 	}
 
+	// Getters
 	protected static ArrayList<EntertainmentList> getParks() {
 		return parks;
 	}

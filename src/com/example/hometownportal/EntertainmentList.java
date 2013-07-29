@@ -1,3 +1,14 @@
+/**
+ * 
+ * EntertainmentList.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class defines an EntertainmentList object.
+ * This object contains basic information about an entertainment activity.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.graphics.Bitmap;
@@ -12,6 +23,7 @@ public class EntertainmentList {
 	private String sDescript;
 	private String lDescript;
 	
+	// Constructor for items without a website
 	public EntertainmentList(Bitmap icon_, String name_, String phone_, String address_, String sDescript_, String lDescript_)
 	{
 		icon = icon_;
@@ -35,6 +47,8 @@ public class EntertainmentList {
 		website = website_;
 	}
 
+	// Getters and Setters
+	
 	protected Bitmap getIcon() {
 		return icon;
 	}

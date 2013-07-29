@@ -1,3 +1,15 @@
+/**
+ * 
+ * EntertainmentDetails.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the EntertainmentDetails Activity.
+ * It displays the details of an Entertainment item, including
+ * name, phone number, address, website, and a description.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.Activity;
@@ -29,8 +41,10 @@ public class EntertainmentDetails extends Activity {
 			description = (TextView)findViewById(R.id.sdLDescript);
 			icon = (ImageView)findViewById(R.id.sdIcon);
 			
+			// Get the type of item from the Intent			
 			String whichArray = extras.getString("list");
 			
+			// Pull data from item in the appropriate array
 			if (whichArray.equals("parks")) {
 				icon.setImageBitmap(EntertainmentActivity.getParks().get(extras.getInt("position")).getIcon());
 				name.setText(EntertainmentActivity.getParks().get(extras.getInt("position")).getName());
@@ -58,6 +72,7 @@ public class EntertainmentDetails extends Activity {
 				description.setText(EntertainmentActivity.getArts().get(extras.getInt("position")).getlDescript());
 			}
 			
+			// add links
 			Linkify.addLinks(phone, Linkify.PHONE_NUMBERS);
 			Linkify.addLinks(website, Linkify.WEB_URLS);
 

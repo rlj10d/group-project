@@ -1,3 +1,14 @@
+/**
+ * 
+ * ShopList.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class defines an ShopList object.
+ * This object contains basic information about a shopping store.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.graphics.Bitmap;
@@ -13,6 +24,7 @@ public class ShopList {
 	private String sDescript;
 	private String lDescript;
 	
+	// Constructor for stores without a website
 	public ShopList(Bitmap icon_, String name_, String phone_, String address_, String type_, String sDescript_, String lDescript_)
 	{
 		icon = icon_;
@@ -37,6 +49,8 @@ public class ShopList {
 		lDescript = lDescript_;
 		website = website_;
 	}
+	
+	// Getters and Setters
 
 	protected Bitmap getIcon() {
 		return icon;

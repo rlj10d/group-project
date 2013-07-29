@@ -1,3 +1,14 @@
+/**
+ * 
+ * ShoppingMalls.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the ShoppingMalls ListActivity.
+ * It displays a ListView of shopping malls in Panama City.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.ListActivity;
@@ -14,6 +25,7 @@ public class ShoppingMalls extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		// set content of ListView via custom adapter
 		adapter = new ShopListAdapter(this, R.layout.shop_entry, ShoppingActivity.getMalls());
 		setListAdapter(adapter);
 		

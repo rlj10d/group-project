@@ -1,3 +1,15 @@
+/**
+ * 
+ * Arts.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the Arts ListActivity.
+ * It displays a ListView of Arts activities in Panama City, FL.
+ * When the user clicks the item, they can view the item's details.
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.ListActivity;
@@ -14,6 +26,7 @@ EntertainmentListAdapter adapter;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		// Set contents of ListView
 		adapter = new EntertainmentListAdapter(this, R.layout.entertainment_entry, EntertainmentActivity.getArts());
 		setListAdapter(adapter);
 		
@@ -26,7 +39,7 @@ EntertainmentListAdapter adapter;
 		return true;
 	}
 	
-	
+	// When item is clicked, start new activity to see the details
 	public void onListItemClick(ListView parent, View v, int position,
 			long id) {
 			Intent i = new Intent(this, EntertainmentDetails.class);

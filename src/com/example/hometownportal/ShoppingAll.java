@@ -1,3 +1,14 @@
+/**
+ * 
+ * ShoppingAll.java
+ * Author: Laura Jackson
+ * July 28, 2013
+ * 
+ * This class implements the ShoppingAll ListActivity.
+ * It displays a list of all shops (Malls and Specialty).
+ * 
+ */
+
 package com.example.hometownportal;
 
 import android.app.ListActivity;
@@ -12,6 +23,7 @@ public class ShoppingAll extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);		
 		
+		// set content of the ListView via custom adapter
 		ShopListAdapter adapter = new ShopListAdapter(this, R.layout.shop_entry, ShoppingActivity.getAllShops());
 		setListAdapter(adapter);
 	}	
